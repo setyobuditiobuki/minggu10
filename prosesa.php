@@ -12,16 +12,16 @@
 
     $email = $_POST["email"] ?? "";
     if (!is_string($email)) {
-    http_response_code(400);
-    exit("Email harus berupa teks.");
-    }
+        http_response_code(400);
+        exit("Email harus berupa teks.");
+        }
     $email = trim($email);
 
     $pesan= $_POST["pesan"] ?? "";
     if (!is_string($pesan)) {
-    http_response_code(400);
-    exit("pesan harus berupa teks.");
-    }
+        http_response_code(400);
+        exit("pesan harus berupa teks.");
+        }
     $pesan = trim($pesan);
 
 ?>
